@@ -1,7 +1,7 @@
 .*
 !.gitignore
 bin/
-build/
+build
 gradle/
 gradlew*
 settings.gradle
