@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.jjh.jdbc.chap3"},{"l":"com.jjh.jdbc.example"},{"l":"com.jjh.jdbc.spring"}]
