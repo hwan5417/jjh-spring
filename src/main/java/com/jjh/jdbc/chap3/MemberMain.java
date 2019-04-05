@@ -1,5 +1,9 @@
 package com.jjh.jdbc.chap3;
 
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.jjh.jdbc.example.ArticleService;
 
 /**
  * MemberRegisterService를 테스트한다.<br>
@@ -11,8 +15,11 @@ package com.jjh.jdbc.chap3;
 public class MemberMain {
 
 	public static void main(String[] args) {
-		MemberDao memberDao = new MemberDao();
-		MemberRegisterService regService = new MemberRegisterService(memberDao);
+		//MemberDao memberDao = new MemberDao();
+		//MemberRegisterService regService = new MemberRegisterService(memberDao);
+		
+		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("chap03.xml");
+		MemberRegisterService regService = ctx.getBean("memberRegisterService", MemberRegisterService.class);
 
 		// registerRequest 초기화
 		RegisterRequest req = new RegisterRequest();

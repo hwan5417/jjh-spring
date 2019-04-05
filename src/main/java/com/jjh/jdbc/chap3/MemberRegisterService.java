@@ -16,9 +16,9 @@ public class MemberRegisterService {
 	static Logger logger = LogManager.getLogger();
 
 	/**
-	 * memberDao를 초기화하는 컨스트럭터
+	 * memberDao를 초기화하는 setter injection
 	 */
-	public MemberRegisterService(MemberDao memberDao) {
+	public void setMemberDao(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
 	
