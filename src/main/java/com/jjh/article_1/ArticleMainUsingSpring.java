@@ -12,7 +12,7 @@ public class ArticleMainUsingSpring {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(
-				"article.xml_1");
+				"article_1.xml");
 		ArticleService articleService = context.getBean("articleService",
 				ArticleService.class);
 		context.close();
